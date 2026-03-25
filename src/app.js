@@ -6,9 +6,7 @@ const tasksRouter = require('./routes/tasks');
 
 
 app.get('/', (req, res) => {
-
-  res.json({ message: "Welcome from MAIN branch"});
-  
+  console.log("Testing CI with a Pull Request"); 
 });
 
 app.use('/tasks', tasksRouter); 
